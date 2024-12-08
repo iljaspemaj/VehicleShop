@@ -29,13 +29,15 @@ const server = http.createServer((req, res) => {
                 }
             });
 
-            return; // Prevent further handling
+            return;
         }
     } else {
         let filePath = "." + req.url;
         if (req.url === "/" || req.url === "") {
             filePath = "./index.html";
         }
+
+        console.log("Request for:", req.url, "Resolved to file path:", filePath);
 
         const extname = path.extname(filePath);
         let contentType = "text/html";
@@ -65,6 +67,7 @@ const server = http.createServer((req, res) => {
         fs.readFile(filePath, (error, content) => {
             if (error) {
                 if (error.code === "ENOENT") {
+                    console.error("File not found:", filePath);
                     res.writeHead(404, { "Content-Type": "text/plain" });
                     res.end("404 File Not Found!");
                 } else {
