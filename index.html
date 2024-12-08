@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>VehicleShop</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <link rel="stylesheet" href="./styles/style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+</head>
+ <body>
+    <header>
+      <h1>Car Dealership</h1>
+      <button class="menu__icon icon-menu open-nav-btn" type="button" title="Open Navigation Menu">
+        <span class="icon-menu__line"></span>
+      </button>
+      <p>Welcome to the best selection of cars: </p>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about-us">About us</a>
+      <a href="#video-showcase">Video showcase</a>
+      <a href="#contact-us">Contact us</a>
+    </nav>
+    <main>
+    <section class="first-wrapper"> 
+      Find your dream's car
+    </section>
+   
+    <section id="gallery">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        <img src="./photos/pexels-mikebirdy-1335077.jpg" alt="Car 1">
+        <img src="./photos/pexels-pixabay-210019.jpg" alt="Car 2">
+        <img src="./photos/arvid-andren-pexels-pixabay-358070.jpg" alt="Car 3">
+      </div>
+    </section>
+    <section id="about-us">
+      <div>
+        <h2>About us</h2>
+        <p>Discover the passion behind our website</p>
+        <p>
+          Welcome to Prime Elite Cars, where luxury meets performance. 
+          Established with a passion for excellence and a commitment to providing unparalleled service, 
+          Prime Elite Cars is your premier destination for high-end automobiles. 
+          Our mission is to deliver an extraordinary driving experience to discerning customers 
+          who demand the best in both style and substance.
+          At Prime Elite Cars, we specialize in offering a curated selection of the finest 
+          luxury and sports cars from the world’s most prestigious brands. 
+          Whether you’re looking for the sleek elegance of a classic coupe or the exhilarating power of a modern supercar, 
+          our inventory is designed to satisfy the most sophisticated tastes.
+        </p>
+      </div>
+    </section>
+    <section id="video-showcase">
+      <h2>Video showcase</h2>
+      <div class="video-container">
+        <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/4VCCB2_TTDI?si=5uI6wH35e97cXJlY" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+      </div>
+    </section>
+    <section id="contact-us">
+      <h2>Contact Us</h2>
+    
+      <form class="contact-us-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required> 
+        <br><br>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="4"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="success-message">
+        Thank you for contacting us, we will be in contact with you soon!
+    </div>
+    </section>
+    
+    </main>
+    <footer>
+     <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            At Prime Elite Cars, we specialize in offering a curated selection of luxury and performance vehicles that embody elegance, precision, and power. With a commitment to excellence and personalized service, we aim to provide an unparalleled car-buying experience for those who seek the finest in automotive craftsmanship. Discover the art of driving with us.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>123 Main St. <br>
+            New York Usa 10015 <br>
+            Email: contact@primeelitecars.com <br>
+            Phone: 069 982 9506</p>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+
+          <div class="social-media-icons">
+            <a href="https://facebook.com/">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://x.com">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://instagram.com/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        <a href="https://linkedin.com/">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        </div>
+        </div>
+      </div>
+      <p class="footer-bootom">
+        <i class="fa-regular fa-copyright"></i> 2024 Prime Elite Cars, all rights reserved
+      </p>
+     </div>
+    </footer>
+
+    <script src="./styles/scripts/ajax.js"></script>
+    <script type="module" src="./styles/scripts/server.js"></script>
+    <script src="./styles/scripts/script.js"></script>
+    <script src="./styles/scripts/submit-form.js"></script>
+ </body>
+</html>
